@@ -3,7 +3,7 @@
 CSES
 
 -   Introductory Problems
-    Weird Algorithm
+    [Weird Algorithm]("Weird Algorithm.cpp")
     Missing Number
     Repetitions
     Increasing Array
