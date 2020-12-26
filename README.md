@@ -17,6 +17,7 @@ CSES
 -   [Coin Piles](Coin%20Piles.cpp)
 -   [Palindrome Reorder](Palindrome%20Reorder.cpp)
 -   [Creating Strings I](Creating%20Strings%20I.cpp)
+-   [Apple Division](Apple%20Division.cpp)
 
 ## Sorting and Searching
 
