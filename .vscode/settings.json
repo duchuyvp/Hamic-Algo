@@ -1,0 +1,27 @@
+{
+    "files.associations": {
+        "*.rmd": "markdown",
+        "list": "cpp",
+        "map": "cpp",
+        "set": "cpp",
+        "algorithm": "cpp",
+        "ostream": "cpp",
+        "cmath": "cpp",
+        "*.tcc": "cpp",
+        "bitset": "cpp",
+        "random": "cpp",
+        "fstream": "cpp",
+        "functional": "cpp",
+        "future": "cpp",
+        "istream": "cpp",
+        "limits": "cpp",
+        "memory_resource": "cpp",
+        "shared_mutex": "cpp",
+        "sstream": "cpp",
+        "streambuf": "cpp",
+        "regex": "cpp",
+        "tuple": "cpp",
+        "valarray": "cpp",
+        "unordered_set": "cpp"
+    }
+}
