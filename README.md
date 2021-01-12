@@ -18,6 +18,8 @@ CSES
 -   [Palindrome Reorder](Palindrome%20Reorder.cpp)
 -   [Creating Strings I](Creating%20Strings%20I.cpp)
 -   [Apple Division](Apple%20Division.cpp)
+-   [Tower of Hanoi](Tower%20of%20Hanoi.cpp)
+-   [Gray Code](Gray%20Code.cpp)
 
 ## Sorting and Searching
 
