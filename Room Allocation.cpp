@@ -86,42 +86,51 @@ void __print_collection(T const &container)
         cout << pos << " ";
 }
 
-// int main()
-// {
-//     long double l, r;
-//     long long int lf, rf;
-//     cin >> l >> r;
-//     long long int res = 0;
-//     long long int i = 2;
-//     while (r - l >= i)
-//     {
-//         rf = floor(r / i);
-//         lf = ceil(l / i);
-//         res += rf - lf + 1;
-//         i <<= 1;
-//     }
-//     cout << res;
-// }
-
 int main(int argc, char const *argv[])
 {
-    string a;
-    cin >> a;
-    a += "a";
-    int i = 0;
-    int r = 1;
-    for (int j = 0; j < a.size(); j++)
+
+    // read;
+    long long int n;
+    cin >> n;
+    vector<vector<long long int>> v;
+    for (int i = 0; i < n; i++)
     {
-        if (int(a[j]) >= 48 && int(a[j]) <= 57)
-        {
-            i = i * 10 + int(a[j]) - 48;
+        vector<long long int> tx(3);
+        vector<long long int> ty(3);
+        cin >> tx[0] >> ty[0];
+        tx[1] = 0;
+        ty[1] = 1;
+        tx[2] = i;
+        ty[2] = i;
+        v.push_back(tx);
+        v.push_back(ty);
+    }
+    sort(v.begin(), v.end());
+    long long int c = 0;
+    long long int ans[n];
+    vector<int> av;
+    for (auto e : v)
+    {
+        if (e[1] == 0)
+        { //entry
+            c++;
+            if (av.empty())
+                ans[e[2]] = c;
+            else
+            {
+                ans[e[2]] = av.back();
+                av.pop_back();
+            }
         }
-        else if (i != 0)
+        else
         {
-            r *= i;
-            i = 0;
+            c--;
+            av.push_back(ans[e[2]]);
         }
     }
-    cout << r;
+    cout << *max_element(ans, ans + n) << endl;
+    for (int i = 0; i < n; i++)
+        cout << (ans[i]) << " ";
+
     return 0;
 }

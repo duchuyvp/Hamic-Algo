@@ -70,7 +70,7 @@ template <class T>
 void print(const T &t)
 {
     for (size_t i = 0; i < t.size(); i++)
-        cout << t[i] << " ";
+        cout << t[i] << endl;
 }
 template <class T>
 void println(const T &t)
@@ -86,42 +86,20 @@ void __print_collection(T const &container)
         cout << pos << " ";
 }
 
-// int main()
-// {
-//     long double l, r;
-//     long long int lf, rf;
-//     cin >> l >> r;
-//     long long int res = 0;
-//     long long int i = 2;
-//     while (r - l >= i)
-//     {
-//         rf = floor(r / i);
-//         lf = ceil(l / i);
-//         res += rf - lf + 1;
-//         i <<= 1;
-//     }
-//     cout << res;
-// }
-
-int main(int argc, char const *argv[])
+void __print_pair(pair<int, int> p)
 {
-    string a;
-    cin >> a;
-    a += "a";
-    int i = 0;
-    int r = 1;
-    for (int j = 0; j < a.size(); j++)
+    cout << p.first << " " << p.second << "\n";
+}
+
+int main()
+{
+    int n, t;
+    cin >> n;
+    set<int> m;
+    while (n--)
     {
-        if (int(a[j]) >= 48 && int(a[j]) <= 57)
-        {
-            i = i * 10 + int(a[j]) - 48;
-        }
-        else if (i != 0)
-        {
-            r *= i;
-            i = 0;
-        }
+        cin >> t;
+        m.insert(t);
     }
-    cout << r;
-    return 0;
+    cout << m.size();
 }

@@ -20,6 +20,7 @@ CSES
 -   [Apple Division](Apple%20Division.cpp)
 -   [Tower of Hanoi](Tower%20of%20Hanoi.cpp)
 -   [Gray Code](Gray%20Code.cpp)
+-   [Digit Queries](Digit%20Queries.cpp)
 
 ## Sorting and Searching
 
@@ -27,3 +28,5 @@ CSES
 -   [Reading Books](Reading%20Books.cpp)
 -   [Subarray Sums I](Subarray%20Sums%20I.cpp)
 -   [Subarray Divisibility](Subarray%20Divisibility.cpp)
+-   [Distinct Numbers](Distinct%20Numbers.cpp)
+-   [Apartments](Apartments.cpp)

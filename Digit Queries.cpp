@@ -70,7 +70,7 @@ template <class T>
 void print(const T &t)
 {
     for (size_t i = 0; i < t.size(); i++)
-        cout << t[i] << " ";
+        cout << t[i] << endl;
 }
 template <class T>
 void println(const T &t)
@@ -86,42 +86,81 @@ void __print_collection(T const &container)
         cout << pos << " ";
 }
 
-// int main()
-// {
-//     long double l, r;
-//     long long int lf, rf;
-//     cin >> l >> r;
-//     long long int res = 0;
-//     long long int i = 2;
-//     while (r - l >= i)
-//     {
-//         rf = floor(r / i);
-//         lf = ceil(l / i);
-//         res += rf - lf + 1;
-//         i <<= 1;
-//     }
-//     cout << res;
-// }
-
-int main(int argc, char const *argv[])
+void __print_pair(pair<int, int> p)
 {
-    string a;
-    cin >> a;
-    a += "a";
-    int i = 0;
-    int r = 1;
-    for (int j = 0; j < a.size(); j++)
+    cout << p.first << " " << p.second << "\n";
+}
+
+string next_string(string s)
+{
+    bool b = false;
+    int i = s.size() - 1;
+    while (i >= 0)
     {
-        if (int(a[j]) >= 48 && int(a[j]) <= 57)
+        if (s[i] != '9')
         {
-            i = i * 10 + int(a[j]) - 48;
+            s[i]++;
+            b = true;
+            break;
         }
-        else if (i != 0)
+        i--;
+    }
+    if (b)
+        return s;
+    else
+    {
+        string a = "1";
+        for (int i = 0; i < s.size(); i++)
         {
-            r *= i;
-            i = 0;
+            a += "0";
+        }
+        return a;
+    }
+}
+
+unsigned long long int p(unsigned long long int n, unsigned long long int m)
+{
+    if (m == 1)
+        return n;
+    return n * p(n, m - 1);
+}
+int main()
+{
+    // read;
+    // write;
+    string s = "";
+    unsigned long long int n;
+    cin >> n;
+    unsigned long long int x;
+    unsigned long long int y;
+    unsigned long long int z;
+    unsigned long long int t;
+    while (n--)
+    {
+        x = 9;
+        y = 1;
+        z = 0;
+        cin >> t;
+        while (t > z + x * y)
+        {
+            z += x * y;
+            x *= 10;
+            y++;
+        }
+        t -= z;
+        if (t % y)
+        {
+            s = to_string(p(10, y - 1) + t / y);
+            cout << s[t % y - 1] << endl;
+            continue;
+        }
+        else
+        {
+            if (y == 1)
+                s = to_string(0 + t / y);
+            else
+                s = to_string(p(10, y - 1) + t / y - 1);
+            cout << s[s.size() - 1] << endl;
         }
     }
-    cout << r;
-    return 0;
 }
