@@ -31,6 +31,9 @@
 *.out
 *.app
 
-# Input Output file
+# Input Output
 input.txt
 output.txt
+
+#cc
+test.*
