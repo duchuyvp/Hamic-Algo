@@ -30,3 +30,4 @@ CSES
 -   [Subarray Divisibility](Subarray%20Divisibility.cpp)
 -   [Distinct Numbers](Distinct%20Numbers.cpp)
 -   [Apartments](Apartments.cpp)
+-   [Concert Tickets](Concert%20Tickets.cpp)
