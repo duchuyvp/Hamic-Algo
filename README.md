@@ -31,3 +31,4 @@ CSES
 -   [Distinct Numbers](Distinct%20Numbers.cpp)
 -   [Apartments](Apartments.cpp)
 -   [Concert Tickets](Concert%20Tickets.cpp)
+-   [Ferris Wheel](Ferris%20Wheel.cpp)
