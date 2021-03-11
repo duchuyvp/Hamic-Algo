@@ -32,3 +32,5 @@ CSES
 -   [Apartments](Apartments.cpp)
 -   [Concert Tickets](Concert%20Tickets.cpp)
 -   [Ferris Wheel](Ferris%20Wheel.cpp)
+-   [Restaurant Customers](Restaurant%20Customers.cpp)
+-   [Movie Festival](Movie%20Festival.cpp)
