@@ -34,3 +34,4 @@ CSES
 -   [Ferris Wheel](Ferris%20Wheel.cpp)
 -   [Restaurant Customers](Restaurant%20Customers.cpp)
 -   [Movie Festival](Movie%20Festival.cpp)
+-   [Sum of Two Values](Sum%20of%20Two%20Values.cpp)
