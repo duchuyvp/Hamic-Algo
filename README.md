@@ -36,3 +36,4 @@ CSES
 -   [Movie Festival](Movie%20Festival.cpp)
 -   [Sum of Two Values](Sum%20of%20Two%20Values.cpp)
 -   [Maximum Subarray Sum](Maximum%20Subarray%20Sum.cpp)
+-   [Josephus Problem I](Josephus%20Problem%20I.cpp)
