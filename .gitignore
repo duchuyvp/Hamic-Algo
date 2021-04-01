@@ -36,6 +36,6 @@ input.txt
 output.txt
 
 #cc
-test.cpp
-test.py
+test*
+main*
 .vscode
