@@ -39,3 +39,9 @@ CSES
 -   [Josephus Problem I](Josephus%20Problem%20I.cpp)
 -   [Stick Lengths](Stick%20Lengths.cpp)
 -   [Sliding Median](Sliding%20Median.cpp)
+
+## Dynamic Programing
+
+-   [Dice Combinations](Dice%20Combinations.cpp)
+-   [Minimizing Coins](Minimizing%20Coins.cpp)
+-   [Coin Combinations I](Coin%20Combinations%20I.cpp)
