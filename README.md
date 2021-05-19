@@ -38,3 +38,4 @@ CSES
 -   [Maximum Subarray Sum](Maximum%20Subarray%20Sum.cpp)
 -   [Josephus Problem I](Josephus%20Problem%20I.cpp)
 -   [Stick Lengths](Stick%20Lengths.cpp)
+-   [Sliding Median](Sliding%20Median.cpp)
