@@ -84,31 +84,28 @@ void __print_collection(T const &container)
     for (auto pos : container)
         cout << pos << " ";
 }
-// int main()
-// {
-//     long long int n;
-//     cin >> n;
-//     vector<long long int> a = {0};
-//     cout << a[0] << endl;
-//     long long int c = 2;
-//     long long int temp = a[0];
-
-//     while (c < n)
-//     {
-//  c++;
-//         temp = temp + (((c - 1) * (c - 1) - 2) * 2 + ((c - 1) * (c - 1) - 3) * 2 + ((c - 1) * (c - 1) - 4) * (c - 1 - 4)) * 2 + ((c - 1) * (c - 1) - 2) + (2 * c - 1) * (c - 1) - 2;
-//         cout << temp << endl;
-//         c++;
-//     }
-// }
-
-// #include <bits/stdc++.h>
-// using namespace std;
 int main()
 {
     long long int n;
     cin >> n;
+    long long int dp = 0;
+    long long int c = 1;
 
-    for (long long int i = 1; i <= n; i++)
-        cout << (i * i) * (i * i - 1) / 2 - 4 * ((i - 1) * (i - 2)) << endl;
+    while (c <= n)
+    {
+        c++;
+        cout << dp << endl;
+        dp = dp + (((c - 1) * (c - 1) - 2) * 2 + ((c - 1) * (c - 1) - 3) * 2 + ((c - 1) * (c - 1) - 4) * (c - 1 - 4)) * 2 + ((c - 1) * (c - 1) - 2) + (2 * c - 1) * (c - 1) - 2;
+    }
 }
+
+// #include <bits/stdc++.h>
+// using namespace std;
+// int main()
+// {
+//     long long int n;
+//     cin >> n;
+
+//     for (long long int i = 1; i <= n; i++)
+//         cout << (i * i) * (i * i - 1) / 2 - 4 * ((i - 1) * (i - 2)) << endl;
+// }

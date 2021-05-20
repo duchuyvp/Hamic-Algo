@@ -8,6 +8,10 @@ using namespace std;
 #define read freopen("input.txt", "r", stdin)
 #define write freopen("output.txt", "w", stdout)
 
+#define IO \
+    read;  \
+    write
+
 #define pb push_back
 #define ll long long
 #define ull unsigned long long
@@ -18,7 +22,7 @@ using namespace std;
 #define mpi map<int, int>
 #define si set<int>
 #define vt vector
-#define getline cout << '\n'
+// #define getline cout << '\n'
 #define all(x) x.begin(), x.end()
 
 #define FOR(i, a, b) for (long long int i = a; (b - i) * (a - i) <= 0 && (b > a ? b != i : b != a); b > a ? i++ : i--)
@@ -26,7 +30,9 @@ using namespace std;
 #define FOREACH(it, m) for (auto it = m.begin(); it != m.end(); it++)
 // #define FOREACH(it, m) for (auto it : m)
 
-// #define IOS ios_base::sync_with_stdio(false)
+#define fast                          \
+    ios_base::sync_with_stdio(false); \
+    cin.tie(0)
 
 #define scanset(s, n) \
     FOR(i, 0, n)      \
